@@ -13,7 +13,7 @@ function App() {
     console.log(e.target.value);
   }
   const handleColorChange = (e) => {
-  document.getElementById("col").style.color = e.target.value;
+    document.body.style.setProperty('background-color', e.target.value, 'important');
   }
   return (
     <>
