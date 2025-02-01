@@ -1,6 +1,7 @@
 import "./App.css";
 import Navbar from './components/Navbar';
 import { useState } from 'react';
+import Accordian from "./components/Accordian";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -18,6 +19,8 @@ function App() {
     <>
       <Navbar title="First"/><br/>
       <Navbar title="second"/><br/>
+      <Navbar title="third"/><br/>
+      <Accordian/>
       <div>
         <p id="col">Count: {count}</p>
         <button onClick={() => setCount(count + 1)}>Increment</button><br/><br/>
