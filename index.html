@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        button{
+            background-color: aqua;
+            border: navy;
+            padding: 10px;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="heading">Hello World</h1>
+    <input text="text" id="myinput" />
+    <button id="button">Submit</button>
+    <script>
+        const headingElement =document.getElementById("heading")
+        const buttonElement =document.getElementById("button")
+        const inputElement =document.getElementById("myinput")
+        buttonElement.addEventListener("mouseover",function(){
+            buttonElement.style.backgroundColor="red"
+        });
+
+        buttonElement.addEventListener("mouseout",function(){
+            buttonElement.style.backgroundColor="green"
+        });
+    </script>
+ </body>
+</html>
+
