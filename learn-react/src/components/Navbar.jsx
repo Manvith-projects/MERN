@@ -1,9 +1,9 @@
 
 
-const navbar = () => {
+const navbar = (props) => {
   return (
     <>
-      hello
+      {props.title}
     </>
   )
 }
