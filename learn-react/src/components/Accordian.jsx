@@ -1,10 +1,24 @@
 
 
+import { DotLottieReact } from '@lottiefiles/dotlottie-react';
+import { useState } from 'react';
+
+
 const Accordian = () => {
+  const [isDark, setIsDark] = useState(false);
+
+  const toggleButton = () => {
+    setIsDark(!isDark);
+  };
+
   return (
     <div>
-        <div className="accordion" id="accordionExample">
-  <div className="accordion-item">
+      
+     <iframe src='https://my.spline.design/miniroomartcopy-1a37fd66ac9cf687161c1604592155dc/' frameborder='0' width='100%' height='1000px'></iframe>
+
+     <button onClick={toggleButton}>Toggle</button>
+        <div className="accordion" id="accordionExample"data-bs-theme={isDark ? 'dark' : 'light'}>
+  <div className="accordion-item" >
     <h2 className="accordion-header">
       <button className="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
         Accordion Item #1
@@ -41,6 +55,11 @@ const Accordian = () => {
     </div>
   </div>
 </div>
+<DotLottieReact
+      src="https://lottie.host/4e27b031-d6ae-4909-af32-250f5b371ee6/3vWYGBECw1.lottie"
+      loop
+      autoplay
+    />
     </div>
   )
 }
